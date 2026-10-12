@@ -1,0 +1,8 @@
+{
+  "name": "Jadwal Kuliah Pintar",
+  "description": "Aplikasi asisten jadwal kuliah pintar untuk mahasiswa Indonesia yang membantu mengelola jadwal kuliah, deadline tugas, catatan, kalender akademik, dan reminder.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

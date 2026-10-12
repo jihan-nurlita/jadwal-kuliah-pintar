@@ -1,20 +1,23 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# jadwal_kuliah_pintar
 
-# Run and deploy your AI Studio app
+A Flutter application designed to help college students manage their class schedules, assignment deadlines, calendars, and notes.
 
-This contains everything you need to run your app locally.
+## Key Features
 
-View your app in AI Studio: https://ai.studio/apps/f60629c4-1439-4bd9-9327-fe6f42392247
+- **Class Schedule:** Manage daily schedules with a 24-hour time format.
+- **Task Management:** Monitor upcoming assignment deadlines and completion status.
+- **Theme Support:** Built-in support for both Dark Mode and Light Mode.
+- **Calendar & Notes:** Additional features to support daily academic activities.
 
-## Run Locally
+## Getting Started
 
-**Prerequisites:**  Node.js
+This project is a starting point for a Flutter application.
 
+A few resources to get you started if this is your first Flutter project:
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.

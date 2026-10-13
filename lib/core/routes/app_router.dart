@@ -1,5 +1,6 @@
 import 'package:go_router/go_router.dart';
 import 'package:jadwal_kuliah_pintar/presentation/pages/login/register_page.dart';
+import 'package:jadwal_kuliah_pintar/presentation/pages/profile/academic_setup_page.dart'; // <-- 1. Import file AcademicSetupPage
 import '../../presentation/pages/splash/splash_page.dart';
 import '../../presentation/pages/onboarding/onboarding_page.dart';
 import '../../presentation/pages/login/login_page.dart';
@@ -26,8 +27,12 @@ class AppRouter {
         builder: (context, state) => const LoginPage(),
       ),
       GoRoute(
-        path: '/register', // 2. Tambahkan rute register di sini
+        path: '/register',
         builder: (context, state) => const RegisterPage(),
+      ),
+      GoRoute(
+        path: '/academic-setup', // <-- 2. Tambahkan rute setup akademik di sini
+        builder: (context, state) => const AcademicSetupPage(),
       ),
       GoRoute(
         path: '/dashboard',

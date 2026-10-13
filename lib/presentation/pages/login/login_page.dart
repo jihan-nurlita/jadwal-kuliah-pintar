@@ -38,7 +38,8 @@ class _LoginPageState extends State<LoginPage> {
             backgroundColor: AppColors.success,
           ),
         );
-        context.go('/dashboard');
+        // Arahkan ke setup akademik terlebih dahulu
+        context.go('/academic-setup');
       }
     }
   }

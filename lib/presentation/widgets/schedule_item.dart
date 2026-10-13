@@ -107,7 +107,7 @@ class ScheduleItem extends StatelessWidget {
               // Ruangan
               Row(
                 children: [
-                  Icon(Icons.domain_outlined,
+                  Icon(Icons.account_balance_outlined,
                       size: 16, color: secondaryTextColor),
                   const SizedBox(width: 6),
                   Text(

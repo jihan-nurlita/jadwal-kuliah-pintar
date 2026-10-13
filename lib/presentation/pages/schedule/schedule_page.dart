@@ -278,7 +278,7 @@ class _SchedulePageState extends State<SchedulePage> {
                                   labelStyle:
                                       TextStyle(color: dialogTheme.hintColor),
                                   prefixIcon: const Icon(
-                                      Icons.access_time_filled_rounded,
+                                      Icons.access_time_rounded,
                                       color: AppColors.primary,
                                       size: 20),
                                   border: OutlineInputBorder(
@@ -653,14 +653,13 @@ class _SchedulePageState extends State<SchedulePage> {
           ),
         ],
       ),
-      floatingActionButton: FloatingActionButton.extended(
+      floatingActionButton: FloatingActionButton(
         onPressed: () => _showAddScheduleDialog(context, scheduleProvider),
         backgroundColor: AppColors.primary,
         foregroundColor: Colors.white,
         elevation: 3,
-        icon: const Icon(Icons.add_rounded),
-        label: const Text('Tambah Jadwal',
-            style: TextStyle(fontWeight: FontWeight.bold)),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+        child: const Icon(Icons.add_rounded, size: 28),
       ),
     );
   }

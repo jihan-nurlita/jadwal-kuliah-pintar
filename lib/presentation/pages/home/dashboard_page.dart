@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jadwal_kuliah_pintar/presentation/pages/profile/profile_page.dart';
 import 'package:provider/provider.dart';
 import 'package:go_router/go_router.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -165,23 +166,33 @@ class _DashboardPageState extends State<DashboardPage> {
             ),
             child: IconButton(
               icon: Icon(
-                isDark ? Icons.light_mode_rounded : Icons.dark_mode_rounded,
-                color: isDark ? Colors.amber[400] : const Color(0xFF4A5568),
+                Icons.notifications,
+                color: isDark ? Colors.white : const Color(0xFF4A5568),
                 size: 22,
               ),
-              onPressed: () => themeProv.toggleTheme(),
+              onPressed: () {},
             ),
           ),
           Container(
-            margin: const EdgeInsets.only(right: 16),
+            margin: const EdgeInsets.only(right: 8),
             decoration: BoxDecoration(
-              color: AppColors.error.withOpacity(0.08),
+              color: isDark
+                  ? Colors.white.withOpacity(0.05)
+                  : Colors.black.withOpacity(0.03),
               shape: BoxShape.circle,
             ),
             child: IconButton(
-              icon: const Icon(Icons.logout_rounded,
-                  color: AppColors.error, size: 22),
-              onPressed: _handleLogout,
+              icon: Icon(
+                Icons.person,
+                color: isDark ? Colors.white : const Color(0xFF4A5568),
+                size: 22,
+              ),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const ProfilePage()),
+                );
+              },
             ),
           ),
         ],
@@ -482,7 +493,7 @@ class _DashboardPageState extends State<DashboardPage> {
                                 const SizedBox(height: 4),
                                 Row(
                                   children: [
-                                    Icon(Icons.domain_outlined,
+                                    Icon(Icons.account_balance_outlined,
                                         size: 12, color: Colors.grey[500]),
                                     const SizedBox(width: 4),
                                     Text(

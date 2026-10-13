@@ -631,21 +631,12 @@ class _TasksPageState extends State<TasksPage>
           _buildTaskList(context, taskProvider.completedTasks, taskProvider),
         ],
       ),
-      floatingActionButton: FloatingActionButton.extended(
+      floatingActionButton: FloatingActionButton(
         onPressed: () => _showAddTaskDialog(context),
         backgroundColor: AppColors.primary,
         elevation: 4,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-        icon: const Icon(Icons.add_rounded, color: Colors.white, size: 24),
-        label: const Text(
-          'Tambah Tugas',
-          style: TextStyle(
-            color: Colors.white,
-            fontWeight: FontWeight.bold,
-            fontSize: 14,
-            letterSpacing: 0.5,
-          ),
-        ),
+        child: const Icon(Icons.add_rounded, color: Colors.white, size: 28),
       ),
     );
   }

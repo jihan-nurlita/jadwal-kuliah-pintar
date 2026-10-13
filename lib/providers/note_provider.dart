@@ -37,4 +37,8 @@ class NoteProvider with ChangeNotifier {
     await HiveService.saveNotes(_notes.map((e) => e.toJson()).toList());
     notifyListeners();
   }
+
+  Future<void> updateNote(NoteModel updatedItem) async {
+    await editNote(updatedItem);
+  }
 }

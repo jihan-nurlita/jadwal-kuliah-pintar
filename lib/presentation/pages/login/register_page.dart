@@ -47,7 +47,8 @@ class _RegisterPageState extends State<RegisterPage> {
             backgroundColor: AppColors.success,
           ),
         );
-        context.go('/dashboard');
+        // Arahkan ke setup akademik untuk mengisi NIM, Prodi, & Fakultas
+        context.go('/academic-setup');
       }
     }
   }
